@@ -1,0 +1,146 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+ font-family: 'Source Sans Pro', sans-serif;
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    display: flex;
+    font-size: 16px;
+    color:  #25133d;
+    text-decoration: none;
+    padding: 15px 30px;
+
+}
+
+.menu a:hover {
+    background-color: #25133d;
+    color: #fff;
+    
+}
+
+.topbaner{
+    background:  #25133d url("images/pozadi.jpg") no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+    position: relative;
+
+}
+
+h2 {
+    font-size: 90px;
+    color: #fff;
+    margin: 0 0 0 0;
+    font-weight: normal;
+    line-height: 1;
+
+}
+
+.subtitlebaner {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 300;
+    margin: 50px 0;
+
+}
+
+.actionbaner {
+    font-size: 20px;
+    color: #fff;
+}
+
+.ruka {
+    position: absolute;
+   bottom: 0; 
+    right: 0;
+}
+
+
+.action {
+    display: flex;
+    font-size: 20px;
+    
+}
+
+.action a {
+    border-radius: 10px; 
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.action-main {
+    background-color: #48418e;
+}
+
+.action a:hover {
+    background-color: #25133d;
+}
+
+.text {
+    display: flex;
+}
+
+.benefit {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ikona {
+    width: 64px;
+}
+
+.stlpceobsah {
+   text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color:#25133d;
+    color: #fff;
+}
